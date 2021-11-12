@@ -1,5 +1,4 @@
 project_id          = "sandbox-io-289003"
-credentials_file = "<FILE>"
 topic_name       = "<TOPIC_NAME>"
 bucket_name      = "<BUCKET_NAME>"
 
