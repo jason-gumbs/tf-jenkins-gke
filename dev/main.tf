@@ -18,15 +18,15 @@ module "gke" {
 }
 
 
-#
-#module "storage" {
-#  source      = "../modules/storage"
-#  bucket_name = var.bucket_name
-#}
-#
-#
-#module "pubsub" {
-#  source     = "../modules/pubsub"
-#  topic_name = var.topic_name
-#}
+
+module "storage" {
+  source      = "../modules/storage"
+  bucket_name = var.bucket_name
+}
+
+
+module "pubsub" {
+  source     = "../modules/pubsub"
+  topic_name = var.topic_name
+}
 
