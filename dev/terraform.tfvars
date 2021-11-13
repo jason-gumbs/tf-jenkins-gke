@@ -1,6 +1,6 @@
 project_id          = "sandbox-io-289003"
-topic_name       = "<TOPIC_NAME>"
-bucket_name      = "<BUCKET_NAME>"
+topic_name       = "Strawberry"
+bucket_name      = "apple"
 
 
 
