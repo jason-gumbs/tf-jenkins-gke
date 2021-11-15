@@ -1,7 +1,8 @@
 project_id          = "sandbox-io-289003"
 topic_name       = "<TOPIC_NAME>"
 bucket_name      = "<BUCKET_NAME>"
-
+google_storage_bucket = "codit-bucket-1"
+google_pubsub_topic = "codit-pubsub-1"
 
 
 

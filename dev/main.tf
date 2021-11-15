@@ -29,4 +29,9 @@ module "pubsub" {
   source     = "../modules/pubsub"
   topic_name = var.topic_name
 }
-
+resource "google_storage_bucket" "static-site" {
+  name = var.google_storage_bucket
+}
+resource "google_pubsub_topic" "example" {
+  name = var.google_pubsub_topic
+}

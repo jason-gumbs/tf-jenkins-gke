@@ -37,3 +37,9 @@ variable "subnetwork" {
 variable "zones" {
   type = list(string)
 }
+variable "google_storage_bucket" {
+  type = string
+}
+variable "google_pubsub_topic" {
+  type = string
+}
