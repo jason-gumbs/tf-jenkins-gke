@@ -35,3 +35,10 @@ resource "google_storage_bucket" "static-site" {
 resource "google_pubsub_topic" "example" {
   name = var.google_pubsub_topic
 }
+
+resource "google_compute_subnetwork" "network-with-private-secondary-ip-ranges" {
+  name          = var.test-subnetwork
+  ip_cidr_range = var.subnet
+  region        = var.helper
+  network       = var.newestone
+}

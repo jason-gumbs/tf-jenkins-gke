@@ -43,3 +43,18 @@ variable "google_storage_bucket" {
 variable "google_pubsub_topic" {
   type = string
 }
+variable "google_compute_subnetwork"  {
+  type = string
+}
+variable "test-subnetwork" {
+  type = string
+}
+variable "subnet" {
+  type = number
+}
+variable "helper" {
+  type = bool
+}
+variable "newestone" {
+  type = string
+}
