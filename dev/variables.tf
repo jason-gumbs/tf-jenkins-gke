@@ -50,7 +50,7 @@ variable "test-subnetwork" {
   type = string
 }
 variable "subnet" {
-  type = number
+  type = string
 }
 variable "helper" {
   type = bool
