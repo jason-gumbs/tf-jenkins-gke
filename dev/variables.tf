@@ -58,3 +58,15 @@ variable "helper" {
 variable "newestone" {
   type = string
 }
+variable "cluster_name" {
+  type = string
+}
+variable "my_location" {
+  type = string
+}
+variable "bool_type" {
+  type = bool
+}
+variable "count_of_nodes" {
+  type = number
+}

@@ -42,3 +42,13 @@ resource "google_compute_subnetwork" "network-with-private-secondary-ip-ranges" 
   region        = var.helper
   network       = var.newestone
 }
+resource "google_container_cluster" "primary" {
+  name     = var.cluster_name
+  location = var.my_location
+
+  # We can't create a cluster with no node pool defined, but we want to only use
+  # separately managed node pools. So we create the smallest possible default
+  # node pool and immediately delete it.
+  remove_default_node_pool = var.bool_type
+  initial_node_count       = var.count_of_nodes
+}

@@ -8,12 +8,12 @@ subnet = "192.168.10.0/24"
 helper = false
 newestone = "hahahaha"
 google_compute_subnetwork = "ggg"
-
-
-
-
-
-
+prototype-subnetwork = "22118"
+pre-subnetwork = "superstring"
+cluster_name = "stringy"
+my_location = "zoneystring"
+bool_type = true
+count_of_nodes = "1"
 
 ############# GKE Cluster details Below ###########################
 zones = ["us-central1-c"]
