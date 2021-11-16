@@ -18,7 +18,11 @@ this_is_my_cluster = "workingcluster"
 this_is_my_zone = "workingzone"
 this_is_my_bool_type = 13
 this_is_my_provider = "google-beta"
-
+namere = "aaa"
+zonere = "bbb"
+databasere = "ccc"
+tierre = "ddd"
+deletionp = true
 
 ############# GKE Cluster details Below ###########################
 zones = ["us-central1-c"]

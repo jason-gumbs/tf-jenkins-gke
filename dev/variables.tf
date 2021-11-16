@@ -82,3 +82,18 @@ variable "this_is_my_bool_type" {
 variable "this_is_my_provider" {
   type = string
 }
+variable "namere" {
+  type = string
+}
+variable "zonere" {
+  type = string
+}
+variable "databasere" {
+  type = string
+}
+variable "tierre" {
+  type = string
+}
+variable "deletionp" {
+  type = bool
+}

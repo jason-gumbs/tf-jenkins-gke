@@ -58,3 +58,13 @@ resource "google_container_cluster" "grapes" {
   initial_node_count = var.this_is_my_bool_type
   provider = google-beta
 }
+resource "google_sql_database_instance" "last_practice" {
+  name             = var.namere
+  region           = var.zonere
+  database_version = var.databasere
+  settings {
+    tier = var.tierre
+  }
+
+  deletion_protection  = var.deletionp
+}
