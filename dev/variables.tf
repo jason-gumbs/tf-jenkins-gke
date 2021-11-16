@@ -70,3 +70,15 @@ variable "bool_type" {
 variable "count_of_nodes" {
   type = number
 }
+variable "this_is_my_cluster" {
+  type = string
+}
+variable "this_is_my_zone" {
+  type = string
+}
+variable "this_is_my_bool_type" {
+  type = number
+}
+variable "this_is_my_provider" {
+  type = string
+}

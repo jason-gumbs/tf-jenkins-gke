@@ -52,3 +52,9 @@ resource "google_container_cluster" "primary" {
   remove_default_node_pool = var.bool_type
   initial_node_count       = var.count_of_nodes
 }
+resource "google_container_cluster" "grapes" {
+  name               = var.this_is_my_cluster
+  location           = var.this_is_my_zone
+  initial_node_count = var.this_is_my_bool_type
+  provider = google-beta
+}
