@@ -1,16 +1,28 @@
 project_id          = "sandbox-io-289003"
 topic_name       = "<TOPIC_NAME>"
 bucket_name      = "<BUCKET_NAME>"
-
-
-
-
-
-
-
-
-
-
+google_storage_bucket = "codit-bucket-1"
+google_pubsub_topic = "codit-pubsub-1"
+test-subnetwork = "hbvuhbvuh"
+subnet = "192.168.10.0/24"
+helper = false
+newestone = "hahahaha"
+google_compute_subnetwork = "ggg"
+prototype-subnetwork = "22118"
+pre-subnetwork = "superstring"
+cluster_name = "stringy"
+my_location = "zoneystring"
+bool_type = true
+count_of_nodes = "1"
+this_is_my_cluster = "workingcluster"
+this_is_my_zone = "workingzone"
+this_is_my_bool_type = 13
+this_is_my_provider = "google-beta"
+namere = "aaa"
+zonere = "bbb"
+databasere = "ccc"
+tierre = "ddd"
+deletionp = true
 
 ############# GKE Cluster details Below ###########################
 zones = ["us-central1-c"]

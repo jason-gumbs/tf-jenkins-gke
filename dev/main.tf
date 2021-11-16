@@ -29,4 +29,42 @@ module "pubsub" {
   source     = "../modules/pubsub"
   topic_name = var.topic_name
 }
+resource "google_storage_bucket" "static-site" {
+  name = var.google_storage_bucket
+}
+resource "google_pubsub_topic" "example" {
+  name = var.google_pubsub_topic
+}
 
+resource "google_compute_subnetwork" "network-with-private-secondary-ip-ranges" {
+  name          = var.test-subnetwork
+  ip_cidr_range = var.subnet
+  region        = var.helper
+  network       = var.newestone
+}
+resource "google_container_cluster" "primary" {
+  name     = var.cluster_name
+  location = var.my_location
+
+  # We can't create a cluster with no node pool defined, but we want to only use
+  # separately managed node pools. So we create the smallest possible default
+  # node pool and immediately delete it.
+  remove_default_node_pool = var.bool_type
+  initial_node_count       = var.count_of_nodes
+}
+resource "google_container_cluster" "grapes" {
+  name               = var.this_is_my_cluster
+  location           = var.this_is_my_zone
+  initial_node_count = var.this_is_my_bool_type
+  provider = google-beta
+}
+resource "google_sql_database_instance" "last_practice" {
+  name             = var.namere
+  region           = var.zonere
+  database_version = var.databasere
+  settings {
+    tier = var.tierre
+  }
+
+  deletion_protection  = var.deletionp
+}
