@@ -37,3 +37,27 @@ variable "subnetwork" {
 variable "zones" {
   type = list(string)
 }
+variable "pf-test-1" {
+  type = string
+}
+variable "isabool" {
+  type = bool
+}
+variable "reportbuckk" {
+  type = string
+}
+variable "idkkkk" {
+  type = string
+}
+variable "okokokok" {
+  type = string
+}
+variable "shareee" {
+  type = string
+}
+variable "numbeee" {
+  type = number
+}
+variable "aaa" {
+  type = list(string)
+}
