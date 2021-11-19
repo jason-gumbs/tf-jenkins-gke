@@ -93,9 +93,6 @@ variable "orange" {
 variable "purple" {
   type = list(string)
 }
-variable "white" {
-  type = string
-}
 variable "black" {
   type = string
 }

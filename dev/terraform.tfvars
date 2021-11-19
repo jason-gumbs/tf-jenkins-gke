@@ -19,7 +19,6 @@ shared_vpc_subnets= ["projects/base-project-196723/regions/us-east1/subnetworks/
 "projects/base-project-196723/regions/us-central1/subnetworks/subnet-1"]
 orange= "codit-data-source-module"
 black="roles/storage.objectAdmin"
-white= "data.google_iam_policy.admin.policy_data"
 purple=  [
   "group:dev@cod-it.tech",
 ]

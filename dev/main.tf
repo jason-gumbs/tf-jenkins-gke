@@ -24,7 +24,6 @@ module "storage" {
   bucket_name = var.bucket_name
   bucket      = var.orange
   members     = var.purple
-  policy_data = var.white
   roles       = var.black
 }
 
