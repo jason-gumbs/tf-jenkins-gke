@@ -1,11 +1,21 @@
-project_id          = "sandbox-io-289003"
-topic_name       = "<TOPIC_NAME>"
-bucket_name      = "<BUCKET_NAME>"
+project_id  = "sandbox-io-289003"
+topic_name  = "apple"
+bucket_name = "codit-data-source-module"
+image_id    = "pubsub-cod-it"
+location    = "red"
+yellow      = "orange"
+green       = "djfcjfrfvcnju"
+newip2021   = "sdfsadfsdf"
+grapes= "grapes"
+orange= "codit-data-source-module"
+black="roles/storage.objectAdmin"
+purple=  [
+  "group:dev@cod-it.tech",
+]
 
-
-
-
-
+####homework detail##############
+homework    = ["dfdsfs", "sdfsdfsdf"]
+address =  ["apples","seeds","trees", "lives","jhgjhgj","bucket"]
 
 
 
@@ -13,9 +23,9 @@ bucket_name      = "<BUCKET_NAME>"
 
 
 ############# GKE Cluster details Below ###########################
-zones = ["us-central1-c"]
+zones               = ["us-central1-c"]
 cluster_name_suffix = "-codit-labs"
-network = "shared-net"
-subnetwork = "tier-1"
-ip_range_services = "tier-1-services"
-ip_range_pods = "tier-1-pods"
+network             = "shared-net"
+subnetwork          = "tier-1"
+ip_range_services   = "tier-1-services"
+ip_range_pods       = "tier-1-pods"

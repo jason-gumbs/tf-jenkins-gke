@@ -14,6 +14,9 @@ variable "zone" {
 variable "bucket_name" {
   type = string
 }
+variable "image_id" {
+  type = string
+}
 variable "topic_name" {
   type = string
 }
@@ -36,4 +39,37 @@ variable "subnetwork" {
 
 variable "zones" {
   type = list(string)
+}
+
+
+variable "location" {
+  type = string
+}
+variable "yellow" {
+  type = string
+}
+variable "green" {
+  type = string
+}
+variable "newip2021" {
+  type = string
+}
+variable "homework" {
+  type = list(string)
+}
+variable "address" {
+  type = list(string)
+}
+
+variable "grapes" {
+  type = string
+}
+variable "orange" {
+  type = string
+}
+variable "purple" {
+  type = list(string)
+}
+variable "black" {
+  type = string
 }
