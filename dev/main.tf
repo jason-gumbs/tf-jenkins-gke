@@ -29,15 +29,9 @@ module "storage" {
 
 module "pubsub" {
   source     = "../modules/pubsub"
-  grapes= var.grapes
-  definition = ""
-  encoding   = ""
-  name       = ""
-  schema     = ""
-  topic_name = ""
-  type       = ""
-}
 
+  topic_name = ""
+}
 resource "google_compute_address" "default" {
   for_each = toset(var.address)
   name     = each.key
