@@ -1,6 +1,6 @@
 project_id  = "sandbox-io-289003"
 topic_name  = "apple"
-bucket_name = "lavender"
+bucket_name = "codit-data-source-module"
 image_id    = "pubsub-cod-it"
 location    = "red"
 yellow      = "orange"
