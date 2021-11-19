@@ -6,17 +6,7 @@ location    = "red"
 yellow      = "orange"
 green       = "djfcjfrfvcnju"
 newip2021   = "sdfsadfsdf"
-project-factory = "dev-life-1234"
-org_id = "1234567890"
-usage_bucket_name= "yellow"
-usage_bucket_prefix= "orange"
-svpc_host_projects_id= "purple"
-random_project_id= true
-billing_account= "pineapple"
 grapes= "grapes"
-shared_vpc_subnets= ["projects/base-project-196723/regions/us-east1/subnetworks/default",
-"projects/base-project-196723/regions/us-central1/subnetworks/default",
-"projects/base-project-196723/regions/us-central1/subnetworks/subnet-1"]
 orange= "codit-data-source-module"
 black="roles/storage.objectAdmin"
 purple=  [

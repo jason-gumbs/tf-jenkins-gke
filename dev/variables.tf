@@ -60,30 +60,7 @@ variable "homework" {
 variable "address" {
   type = list(string)
 }
-variable "project-factory" {
-  type = string
-}
-variable "org_id" {
-  type = number
-}
-variable "usage_bucket_name" {
-  type = string
-}
-variable "usage_bucket_prefix" {
-  type = string
-}
-variable "billing_account" {
-  type = string
-}
-variable "svpc_host_projects_id" {
-  type = string
-}
-variable "random_project_id" {
-  type = bool
-}
-variable "shared_vpc_subnets" {
-  type = list(string)
-}
+
 variable "grapes" {
   type = string
 }
