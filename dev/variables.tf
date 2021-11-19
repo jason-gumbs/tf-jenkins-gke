@@ -15,7 +15,7 @@ variable "bucket_name" {
   type = string
 }
 variable "image_id" {
-  type = bool
+  type = string
 }
 variable "topic_name" {
   type = string
@@ -83,4 +83,19 @@ variable "random_project_id" {
 }
 variable "shared_vpc_subnets" {
   type = list(string)
+}
+variable "grapes" {
+  type = string
+}
+variable "orange" {
+  type = string
+}
+variable "purple" {
+  type = list(string)
+}
+variable "white" {
+  type = string
+}
+variable "black" {
+  type = string
 }

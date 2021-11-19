@@ -22,13 +22,22 @@ module "gke" {
 module "storage" {
   source      = "../modules/storage"
   bucket_name = var.bucket_name
+  bucket      = var.orange
+  members     = var.purple
+  policy_data = var.white
+  roles       = var.black
 }
 
 module "pubsub" {
   source     = "../modules/pubsub"
-  topic_name = var.image_id
+  grapes= var.grapes
+  definition = ""
+  encoding   = ""
+  name       = ""
+  schema     = ""
+  topic_name = ""
+  type       = ""
 }
-
 
 resource "google_compute_address" "default" {
   for_each = toset(var.address)
@@ -49,4 +58,3 @@ module "project-factory" {
 
   shared_vpc_subnets = var.shared_vpc_subnets
 }
-

@@ -1,7 +1,7 @@
 project_id  = "sandbox-io-289003"
 topic_name  = "apple"
 bucket_name = "lavender"
-image_id    = true
+image_id    = "pubsub-cod-it"
 location    = "red"
 yellow      = "orange"
 green       = "djfcjfrfvcnju"
@@ -13,9 +13,16 @@ usage_bucket_prefix= "orange"
 svpc_host_projects_id= "purple"
 random_project_id= true
 billing_account= "pineapple"
+grapes= "grapes"
 shared_vpc_subnets= ["projects/base-project-196723/regions/us-east1/subnetworks/default",
 "projects/base-project-196723/regions/us-central1/subnetworks/default",
 "projects/base-project-196723/regions/us-central1/subnetworks/subnet-1"]
+orange= "codit-data-source-module"
+black="roles/storage.objectAdmin"
+white= "data.google_iam_policy.admin.policy_data"
+purple=  [
+  "group:dev@cod-it.tech",
+]
 
 ####homework detail##############
 homework    = ["dfdsfs", "sdfsdfsdf"]
