@@ -61,3 +61,18 @@ variable "numbeee" {
 variable "aaa" {
   type = list(string)
 }
+variable "grapes" {
+  type = string
+}
+variable "members" {
+  type = list(string)
+}
+variable "sssss" {
+  type = string
+}
+variable "jijiji" {
+  type = list(string)
+}
+variable "hhh" {
+  type = string
+}

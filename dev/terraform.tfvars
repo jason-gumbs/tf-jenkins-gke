@@ -1,6 +1,6 @@
 project_id  = "sandbox-io-289003"
 topic_name  = "<TOPIC_NAME>"
-bucket_name = "<BUCKET_NAME>"
+bucket_name = "codit-data-source-module"
 pf-test-1   = "aaaaa"
 isabool     = true
 reportbuckk = "1"
@@ -15,9 +15,15 @@ aaa         = [
 ]
 
 
-
-
-
+grapes = "grapes"
+members = [
+  "user:jane@example.com",
+]
+sssss = "roles/storage.objectAdmin"
+jijiji =  [
+"group:dev@cod-it.tech",
+]
+hhh = "gygygygygyg"
 
 
 ############# GKE Cluster details Below ###########################

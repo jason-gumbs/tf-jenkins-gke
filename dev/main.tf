@@ -22,14 +22,16 @@ module "gke" {
 module "storage" {
   source      = "../modules/storage"
   bucket_name = var.bucket_name
-}
+  rsa = var.sssss
+  memberss = var.jijiji
+  buck = var.hhh
+  }
 
 
 module "pubsub" {
   source     = "../modules/pubsub"
   topic_name = var.topic_name
 }
-
 module "project-factory" {
   source  = "terraform-google-modules/project-factory/google"
   version = "~> 10.1"
@@ -44,3 +46,7 @@ module "project-factory" {
 
   shared_vpc_subnets = var.aaa
 }
+
+
+
+
