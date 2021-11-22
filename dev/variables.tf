@@ -37,3 +37,15 @@ variable "subnetwork" {
 variable "zones" {
   type = list(string)
 }
+
+variable "albany" {
+  type = string
+}
+
+variable "seattle" {
+  type = list(string)
+}
+
+variable "atlanta" {
+  type = string
+}

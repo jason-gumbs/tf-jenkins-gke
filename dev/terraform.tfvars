@@ -1,6 +1,9 @@
 project_id          = "sandbox-io-289003"
 topic_name       = "<TOPIC_NAME>"
 bucket_name      = "<BUCKET_NAME>"
+albany = "capital"
+seattle = [ "raining", "umbrella"]
+atlanta = "peaches"
 
 
 

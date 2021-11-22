@@ -22,6 +22,9 @@ module "gke" {
 module "storage" {
   source      = "../modules/storage"
   bucket_name = var.bucket_name
+  new_york = var.albany
+  washington = var.seattle
+  georgia = var.atlanta
 }
 
 
