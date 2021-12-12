@@ -12,6 +12,45 @@ black="roles/storage.objectAdmin"
 purple=  [
   "group:dev@cod-it.tech",
 ]
+tcp-health-check= "health check"
+ts=1
+ci=1
+ht=4
+ut=5
+healthcheckport= "jordan"
+USE_NAMED_PORT= "Tesla"
+nissan= "water"
+honda=  "earth"
+name= "circle"
+instance= "square"
+target=5
+fix=1
+computename= "region-service"
+checks=["google-compute-health"]
+duration=10
+CLIENT_IP= "newclientip"
+checkcheck="check"
+sec=1
+timeout=1
+miami=80
+forwardingrule="website-forwarding-rule"
+balancing="INTERNAL"
+backend="google id"
+ports=true
+website="website-backend"
+health=["compute-health"]
+computeroute="network-route"
+destrange=15
+hopip= "newhopip"
+priority=100
+
+
+
+
+
+
+
+
 
 ####homework detail##############
 homework    = ["dfdsfs", "sdfsdfsdf"]

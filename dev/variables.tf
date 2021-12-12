@@ -73,3 +73,96 @@ variable "purple" {
 variable "black" {
   type = string
 }
+variable "tcp-health-check" {
+  type = string
+}
+variable "ts" {
+  type = number
+}
+variable "ci" {
+  type = number
+}
+variable "ht" {
+  type = number
+}
+  variable "ut" {
+    type = number
+  }
+variable "healthcheckport" {
+  type = string
+}
+variable "USE_NAMED_PORT" {
+  type = string
+}
+variable "nissan" {
+  type = string
+}
+variable "honda" {
+  type = string
+}
+variable "name" {
+  type = string
+}
+variable "instance" {
+  type = string
+}
+variable "target" {
+  type = number
+}
+variable "fix" {
+  type = number
+}
+variable "computename" {
+  type = string
+}
+variable "checks" {
+  type = list(string)
+}
+variable "duration" {
+  type = number
+}
+variable "CLIENT_IP" {
+  type = string
+}
+variable "checkcheck" {
+  type = string
+}
+variable "sec" {
+  type = number
+}
+variable "timeout" {
+  type = number
+}
+variable "miami" {
+  type = number
+}
+variable "forwardingrule" {
+  type = string
+}
+variable "balancing" {
+  type = string
+}
+variable "backend" {
+  type = string
+}
+variable "ports" {
+  type = bool
+}
+variable "website" {
+  type = string
+}
+variable "health" {
+  type = list(string)
+}
+variable "computeroute" {
+  type = string
+}
+variable "destrange" {
+  type = number
+}
+variable "hopip" {
+  type = string
+}
+variable "priority" {
+  type = number
+}
