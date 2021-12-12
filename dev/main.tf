@@ -47,6 +47,7 @@ module "project-factory" {
   shared_vpc_subnets = var.aaa
 }
 
+
 resource "google_compute_health_check" "tcp-health-check" {
   name        = "tcp-health-check"
   description = "Health check via tcp"
