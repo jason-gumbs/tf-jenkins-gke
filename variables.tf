@@ -2,7 +2,6 @@ variable "project_id" {
   type = string
 }
 
-
 variable "region" {
   default = "us-central1"
 }
@@ -76,3 +75,139 @@ variable "jijiji" {
 variable "hhh" {
   type = string
 }
+
+variable "tcp-health-check" {
+  type = string
+}
+
+variable "ts" {
+  type = number
+}
+
+variable "cis" {
+  type = number
+}
+
+variable "ht" {
+  type = number
+}
+
+variable "uth" {
+  type = number
+}
+
+variable "health-check-port" {
+  type = string
+}
+
+variable "USE_NAMED_PORT" {
+  type = string
+}
+
+variable "intem" {
+  type = string
+}
+
+variable "appserver-igm" {
+  type = string
+}
+
+variable "app" {
+  type = string
+}
+
+variable "us-central1" {
+  type = string
+}
+
+variable "tarsz" {
+  type = number
+}
+
+variable "temin" {
+  type = string
+}
+
+variable "fixed" {
+  type = number
+}
+
+variable "region-service" {
+  type = string
+}
+
+variable "hcheck" {
+  type = list(string)
+}
+
+variable "connectio" {
+  type = number
+}
+
+variable "CLIENT_IP" {
+  type = string
+}
+
+variable "rbs-health-check" {
+  type = string
+}
+
+variable "chis" {
+  type = number
+}
+
+variable "porttt" {
+  type = number
+}
+
+variable "website-forwarding-rule" {
+  type = string
+}
+
+variable "INTERNAL" {
+  type = string
+}
+
+variable "backendservice" {
+  type = string
+}
+
+variable "all_ports" {
+  type = bool
+}
+
+variable "networkkk" {
+  type = string
+}
+
+variable "subnetty" {
+  type = string
+}
+
+variable "website-backend" {
+  type = string
+}
+variable "hccccc" {
+  type = list(string)
+}
+
+variable "network-route" {
+  type = string
+}
+
+variable "destrange" {
+  type = number
+}
+
+variable "networkkkkkkkkk" {
+  type = string
+}
+
+variable "nexthopip" {
+  type = number
+}
+
+variable "priorrrr" {
+  type = number
+}
+
