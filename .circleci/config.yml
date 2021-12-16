@@ -15,7 +15,7 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - ~/tf-jenkins-gke
+            - ./tf-jenkins-gke/*
 
   build:
     docker:
