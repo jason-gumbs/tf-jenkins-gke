@@ -15,7 +15,8 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - modules/*
+            - .
+
   build:
     docker:
       # Secondary container image on common network.
