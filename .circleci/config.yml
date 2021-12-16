@@ -27,6 +27,7 @@ jobs:
       # and can access mongo on localhost
       - checkout:
           path: ~/tf-jenkins-gke
+      - run: export GOOGLE_APPLICATION_CREDENTIALS=file.json
       - run: terraform init
 
 workflows:
