@@ -25,13 +25,17 @@ jobs:
       # and can access mongo on localhost
       - attach_workspace:
           at: .
-      - run: cat file.json
-      - run: export GOOGLE_APPLICATION_CREDENTIALS=file.json
       - run:
           name: terraform init & plan
           command: |
             cd dev
             GOOGLE_APPLICATION_CREDENTIALS=../file.json terraform init -input=false
+      - run:
+          name: terraform init & plan
+          command: |
+            cd dev
+            GOOGLE_APPLICATION_CREDENTIALS=../file.json terraform init -input=false
+            terraform plan
 
 workflows:
   new-workflow:
