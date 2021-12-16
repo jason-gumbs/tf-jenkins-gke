@@ -4,9 +4,7 @@ jobs:
     docker:
       # Secondary container image on common network.
       - image: google/cloud-sdk:slim
-
     working_directory: ~/tf-jenkins-gke/dev
-
     steps:
       # command will execute in trusty container
       # and can access mongo on localhost
@@ -17,25 +15,26 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - .
-
+            - /tf-jenkins-gke
   build:
     docker:
       # Secondary container image on common network.
       - image: docker.mirror.hashicorp.services/hashicorp/terraform:light
-    working_directory: ~/tf-jenkins-gke/dev
     steps:
       # command will execute in trusty container
       # and can access mongo on localhost
-      - checkout:
-          path: ~/tf-jenkins-gke
-      - run: echo $GCP_KEY > file.json
+      - attach_workspace:
+          at: .
+      - run: cat file.json
       - run: export GOOGLE_APPLICATION_CREDENTIALS=file.json
       - run: terraform init
 
 workflows:
   new-workflow:
     jobs:
-      - build:
+      - log-in:
           context:
             - gcp-key
+      - build:
+          requires:
+            - log-in
