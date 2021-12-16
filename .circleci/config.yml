@@ -7,13 +7,13 @@ jobs:
     steps:
       - checkout
       - terraform/init:
-          path: /dev
+          path: ~/dev
       - terraform/validate:
-          path: /dev
+          path: ~/dev
       - terraform/fmt:
-          path: /dev
+          path: ~/dev
       - terraform/plan:
-          path: /dev
+          path: ~/dev
     working_directory: ~/src
 workflows:
   single-job-lifecycle:
