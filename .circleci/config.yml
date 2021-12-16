@@ -3,18 +3,19 @@ jobs:
   build:
     docker:
       # Primary container image where all steps run.
-      - image: buildpack-deps:trusty
+      - image: hashicorp/terraform:1.1.0
       # Secondary container image on common network.
-      - image: mongo:2.6.8-jessie
-        command: [mongod, --smallfiles]
+      - image: google/cloud-sdk:slim
 
     working_directory: ~/
 
     steps:
       # command will execute in trusty container
       # and can access mongo on localhost
-      - run: sleep 5 && nc -vz localhost 27017
+      - run: echo $GCP_KEY
 workflows:
   my-workflow:
     jobs:
-      - build
+      - build:
+          context:
+            - gcp-key
