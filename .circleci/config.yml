@@ -1,9 +1,7 @@
 version: 2.1
 jobs:
-  build:
+  log-in:
     docker:
-      # Primary container image where all steps run.
-      - image: sennerholm/google-cloud-sdk-terraform:latest
       # Secondary container image on common network.
       - image: google/cloud-sdk:slim
 
@@ -16,9 +14,26 @@ jobs:
           path: ~/tf-jenkins-gke
       - run: gcloud auth activate-service-account cd-jenkins@sandbox-io-289003.iam.gserviceaccount.com --key-file $GCP_KEY --project=sandbox-io-289003
       - run: echo $GCP_KEY
+  build:
+    docker:
+      # Secondary container image on common network.
+      - image: hashicorp/terraform:1.1.0
+
+    working_directory: ~/tf-jenkins-gke/dev
+
+    steps:
+      # command will execute in trusty container
+      # and can access mongo on localhost
+      - checkout:
+          path: ~/tf-jenkins-gke
+      - run: terraform init
+
 workflows:
   my-workflow:
     jobs:
-      - build:
+      - log-in:
           context:
             - gcp-key
+      - build:
+          requires:
+            - log-in
