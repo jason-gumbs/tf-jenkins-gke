@@ -1,21 +1,20 @@
-version: '2.1'
-orbs:
-  terraform: circleci/terraform@3.0.0
+version: 2.1
 jobs:
-  single-job-lifecycle:
-    executor: terraform/default
+  build:
+    docker:
+      # Primary container image where all steps run.
+      - image: buildpack-deps:trusty
+      # Secondary container image on common network.
+      - image: mongo:2.6.8-jessie
+        command: [mongod, --smallfiles]
+
+    working_directory: ~/
+
     steps:
-      - checkout
-      - terraform/init:
-          path: ./dev
-      - terraform/validate:
-          path: ./dev
-      - terraform/fmt:
-          path: ./dev
-      - terraform/plan:
-          path: ./dev
-    working_directory: ./src
+      # command will execute in trusty container
+      # and can access mongo on localhost
+      - run: sleep 5 && nc -vz localhost 27017
 workflows:
-  single-job-lifecycle:
+  my-workflow:
     jobs:
-      - single-job-lifecycle
+      - build
