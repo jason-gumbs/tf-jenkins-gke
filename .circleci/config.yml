@@ -29,7 +29,7 @@ jobs:
       - run: terraform init
 
 workflows:
-  my-workflow:
+  new-workflow:
     jobs:
       - log-in:
           context:
