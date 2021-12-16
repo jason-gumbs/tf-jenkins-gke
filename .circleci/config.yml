@@ -13,20 +13,19 @@ jobs:
       - run: echo $GCP_KEY > file.json
       - run: gcloud auth activate-service-account cd-jenkins@sandbox-io-289003.iam.gserviceaccount.com --key-file file.json --project=sandbox-io-289003
       - persist_to_workspace:
-          root: /tf-jenkins-gke
+          root: .
           paths:
-            - /tf-jenkins-gke
+            - ../*
 
   build:
     docker:
       # Secondary container image on common network.
       - image: docker.mirror.hashicorp.services/hashicorp/terraform:light
-    working_directory: ~/tf-jenkins-gke/dev
     steps:
       # command will execute in trusty container
       # and can access mongo on localhost
       - attach_workspace:
-          at: /tf-jenkins-gke
+          at: .
       - run: cat file.json
       - run: export GOOGLE_APPLICATION_CREDENTIALS=file.json
       - run: terraform init
