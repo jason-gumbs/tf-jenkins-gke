@@ -31,7 +31,7 @@ jobs:
           name: terraform init & plan
           command: |
             cd dev
-            GOOGLE_APPLICATION_CREDENTIALS ../file.json terraform init -input=false
+            GOOGLE_APPLICATION_CREDENTIALS=../file.json terraform init -input=false
 
 workflows:
   new-workflow:
