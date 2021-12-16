@@ -12,8 +12,9 @@ jobs:
       # and can access mongo on localhost
       - checkout:
           path: ~/tf-jenkins-gke
-      - run: gcloud auth activate-service-account cd-jenkins@sandbox-io-289003.iam.gserviceaccount.com --key-file $GCP_KEY --project=sandbox-io-289003
-      - run: echo $GCP_KEY
+      - run: echo $GCP_KEY > file.json
+      - run: gcloud auth activate-service-account cd-jenkins@sandbox-io-289003.iam.gserviceaccount.com --key-file file.json --project=sandbox-io-289003
+
   build:
     docker:
       # Secondary container image on common network.
