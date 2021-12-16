@@ -9,13 +9,12 @@ jobs:
       # command will execute in trusty container
       # and can access mongo on localhost
       - checkout:
-          path: ~/tf-jenkins-gke
       - run: echo $GCP_KEY > file.json
       - run: gcloud auth activate-service-account cd-jenkins@sandbox-io-289003.iam.gserviceaccount.com --key-file file.json --project=sandbox-io-289003
       - persist_to_workspace:
-          root: ../
+          root: .
           paths:
-            - ../
+            - .
 
   build:
     docker:
@@ -28,7 +27,11 @@ jobs:
           at: .
       - run: cat file.json
       - run: export GOOGLE_APPLICATION_CREDENTIALS=file.json
-      - run: terraform init
+      - run:
+          name: terraform init & plan
+          command: |
+            cd dev
+            terraform init -input=false
 
 workflows:
   new-workflow:
