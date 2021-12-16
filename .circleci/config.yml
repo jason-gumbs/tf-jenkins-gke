@@ -22,15 +22,13 @@ jobs:
   build:
     docker:
       # Secondary container image on common network.
-      - image: hashicorp/terraform:1.1.0
-
-    working_directory: ~/tf-jenkins-gke/dev
-
+      - image: docker.mirror.hashicorp.services/hashicorp/terraform:light
     steps:
       # command will execute in trusty container
       # and can access mongo on localhost
       - attach_workspace:
           at: .
+      - run: cat file.json
       - run: export GOOGLE_APPLICATION_CREDENTIALS=file.json
       - run: terraform init
 
