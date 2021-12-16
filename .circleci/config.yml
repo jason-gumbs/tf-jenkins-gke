@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   log-in:
     docker:
@@ -27,11 +27,8 @@ jobs:
           at: .
       - run: cat file.json
       - run: export GOOGLE_APPLICATION_CREDENTIALS=file.json
-      - run:
-          name: terraform init & plan
-          command: |
-            cd dev
-            terraform init -input=false
+      - run: cd dev
+      - run: terraform init -input=false
 
 workflows:
   new-workflow:
