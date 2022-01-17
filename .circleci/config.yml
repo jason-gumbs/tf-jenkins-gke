@@ -37,6 +37,7 @@ jobs:
             GOOGLE_APPLICATION_CREDENTIALS=../file.json terraform init -input=false
             GOOGLE_APPLICATION_CREDENTIALS=../file.json terraform plan
 
+
 workflows:
   new-workflow:
     jobs:
@@ -46,3 +47,6 @@ workflows:
       - build:
           requires:
             - log-in
+      - fastlane_test:
+          requires:
+            - build

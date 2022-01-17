@@ -24,6 +24,11 @@ module "storage" {
   bucket_name = var.bucket_name
 }
 
+module "storage" {
+  source      = "../modules/storage"
+  bucket_name = "new-bucket"
+}
+
 
 module "pubsub" {
   source     = "../modules/pubsub"
