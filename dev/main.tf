@@ -24,7 +24,7 @@ module "storage" {
   bucket_name = var.bucket_name
 }
 
-module "storage" {
+module "storage-new-bucket" {
   source      = "../modules/storage"
   bucket_name = "new-bucket"
 }
